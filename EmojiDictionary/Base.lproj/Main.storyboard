@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -41,6 +42,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eOE-og-Tfy">
+            <objects>
+                <viewController id="kj6-0y-WM1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pW5-Mx-APw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vzi-TY-8am"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OsK-4x-DQE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emoji" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLZ-Rm-FLb">
+                                <rect key="frame" x="16" y="312" width="343" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="eav-vh-Fde"/>
+                                    <constraint firstAttribute="width" secondItem="eLZ-Rm-FLb" secondAttribute="height" multiplier="343:43" id="zKd-zN-APv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😑" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byw-4p-Z6J">
+                                <rect key="frame" x="100" y="89" width="174" height="191"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="Q0t-oM-aZc"/>
+                                    <constraint firstAttribute="height" constant="191" id="zEi-TW-b6C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="120"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eLZ-Rm-FLb" firstAttribute="centerX" secondItem="OsK-4x-DQE" secondAttribute="centerX" id="5jv-sb-qs8"/>
+                            <constraint firstItem="Byw-4p-Z6J" firstAttribute="top" secondItem="pW5-Mx-APw" secondAttribute="bottom" constant="69" id="Kbv-ri-23t"/>
+                            <constraint firstItem="Byw-4p-Z6J" firstAttribute="centerX" secondItem="OsK-4x-DQE" secondAttribute="centerX" id="exE-Iz-DxG"/>
+                            <constraint firstItem="eLZ-Rm-FLb" firstAttribute="top" secondItem="Byw-4p-Z6J" secondAttribute="bottom" constant="32" id="pOZ-bg-xUD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cqI-ab-JH4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="984.79999999999995" y="136.28185907046478"/>
         </scene>
     </scenes>
 </document>
